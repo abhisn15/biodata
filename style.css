@@ -1,0 +1,386 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.section {
+    display: flex;
+    margin-top: 10px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv {
+    display: flex;
+    justify-content: center;
+}
+
+.side-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fd8d14;
+    padding: 30px 30px 30px 30px;
+    border-radius: 30px;
+}
+
+.lingkaran-profil {
+    width: 120px;
+    /* Sesuaikan ukuran dengan gambar Anda */
+    height: 120px;
+    /* Sesuaikan ukuran dengan gambar Anda */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.lingkaran-profil img {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nama {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.status_pelajar {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tentang_pelajar {
+    position: relative;
+    left: 14px;
+    margin: 10px 0 10px 0;
+    width: 280px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lomba {
+    padding: 0 0 10px 0;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.list_lomba {
+    width: 200px;
+}
+
+.futsal {
+    width: 80px;
+}
+
+.kontak {
+    padding: 0 0 10px 0;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.telp {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.telpon {
+    margin-bottom: 14px;
+}
+
+.nomor-kontak {
+    display: flex;
+}
+
+.nomor-telp {
+    margin-left: 28px;
+}
+
+.nomor-wa {
+    margin-left: 24px;
+}
+
+.data_pribadi {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.margin_data_pribadi {
+    margin-bottom: 10px;
+}
+
+.side-right {
+    padding: 60px 0 0 20px;
+}
+
+.data2 {
+    display: flex;
+}
+
+.jawab2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.status {
+    position: relative;
+    left: 132px;
+}
+
+.pendidikan {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sekolah {
+    display: flex;
+}
+
+.tanggal {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.margin_pendidikan {
+    margin: 10px 0 10px 0;
+}
+
+.margin_hobi {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.side-right2 {
+    display: none;
+}
+
+
+/* Media queries for specific screen sizes */
+
+@media only screen and (max-width: 320px) {
+    /* Styles for 320px and below */
+    .section {
+        margin-top: 30px;
+        display: block;
+    }
+    .cv {
+        display: flex;
+        flex-direction: column;
+    }
+    .side-right {
+        display: none;
+    }
+    .side-right2 {
+        display: block;
+    }
+    .alamat {
+        position: relative;
+        left: 120px;
+    }
+    .jenis_kelamin {
+        position: relative;
+        left: 68px;
+    }
+    .agama {
+        position: relative;
+        left: 118px;
+    }
+    .warga {
+        position: relative;
+        left: 27px;
+    }
+    .email {
+        position: relative;
+        left: 134px;
+    }
+    .status {
+        position: relative;
+        left: 132px;
+    }
+    .margin_data_pribadi2 {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .margin_pendidikan2 {
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+    .margin_hobi2 {
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+    .list_hobi {
+        padding-bottom: 40px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        text-align: left;
+    }
+    .tanggal2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .sekolah2 {
+        display: flex;
+        justify-content: center;
+    }
+    .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+        padding-top: 10px;
+    }
+    .jawab {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .sekolah2 {
+        font-size: 9px;
+    }
+    .list_hobi {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    /* Styles for screen sizes between 321px and 768px */
+    .section {
+        margin-top: 40px;
+        display: block;
+    }
+    .cv {
+        display: flex;
+        flex-direction: column;
+    }
+    .side-left {
+        margin: 0 auto;
+        width: 300px;
+    }
+    .side-right {
+        display: none;
+    }
+    .side-right2 {
+        display: block;
+    }
+    .margin_data_pribadi2 {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .margin_pendidikan2 {
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+    .margin_hobi2 {
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+    .list_hobi {
+        padding-bottom: 40px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        text-align: left;
+    }
+    .tanggal2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .sekolah2 {
+        display: flex;
+        justify-content: center;
+    }
+    .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10.5px;
+        padding-top: 10px;
+    }
+    .jawab {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sekolah2 {
+        font-size: 10.5px;
+    }
+    .list_hobi {
+        font-size: 10.5px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+    .side-right2 {
+        display: none;
+    }
+    .section {
+        align-items: center;
+        display: block;
+    }
+    .cv {
+        justify-content: center;
+    }
+    .side-right {
+        font-size: 14px;
+    }
+    .margin_data_pribadi,
+    .margin_hobi,
+    .margin_pendidikan {
+        text-align: center;
+    }
+    .data2 {
+        display: flex;
+        justify-content: center;
+    }
+    .sekolah {
+        justify-content: center;
+    }
+    .jawab2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .list_hobi2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Additional styles for screen sizes larger than 1440px can be added here */
